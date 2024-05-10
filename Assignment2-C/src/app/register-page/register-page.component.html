@@ -1,0 +1,52 @@
+<div style="display: flex; flex-direction: column; align-items: center">
+  <h2>Register</h2>
+  <form
+    style="display: flex; flex-direction: column; width: 400px; height: 300px"
+    (ngSubmit)="register()"
+  >
+    <input
+      style="margin-bottom: 5px; height: 40px;"
+      [(ngModel)]="name"
+      name="name"
+      placeholder="Name"
+      required
+    />
+
+    
+    <input
+      style="margin-bottom: 5px; height: 40px;"
+      [(ngModel)]="username"
+      name="username"
+      placeholder="Username"
+      required
+    />
+    <input
+      style="margin-bottom: 5px; height: 40px;"
+      [(ngModel)]="password"
+      type="password"
+      name="password"
+      placeholder="Password"
+      required
+    />
+
+    <input
+      style="margin-bottom: 5px; height: 40px;"
+      [(ngModel)]="confirmPassword"
+      type="password"
+      name="confirmPassword"
+      placeholder="Confirm Password"
+      required
+    />
+    <input
+    style="height: 40px;"
+      [(ngModel)]="email"
+      name="email"
+      type="email"
+      placeholder="Email"
+      required
+    />
+    <button style="margin-top: 5px; height: 47px;" type="submit" [disabled]="password !== confirmPassword">
+      Register
+    </button>
+  </form>
+</div>

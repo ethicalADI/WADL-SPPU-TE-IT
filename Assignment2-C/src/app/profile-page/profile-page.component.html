@@ -1,0 +1,14 @@
+<div style="display: flex; flex-direction: column; align-items: center;">
+  <h2>User Profile</h2>
+  <div style="border: 1px solid black; padding: 10px; width: 300px; " *ngIf="user | async as userData; else noUser">
+    <p>Name: {{ userData.name }}</p>
+    <p>Username: {{ userData.username }}</p>
+    <p>Email: {{ userData.email }}</p>
+    <p>Password: {{ userData.password }}</p>
+    
+  </div>
+  <button style="width: 323px; height: 40px; margin-top: 10px;" (click)="logout()">Logout</button>
+  <ng-template #noUser
+    ><p>No user data available. Please login.</p></ng-template
+  >
+</div>

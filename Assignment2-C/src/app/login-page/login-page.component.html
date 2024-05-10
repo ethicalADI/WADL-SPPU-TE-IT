@@ -1,0 +1,21 @@
+<div style="display: flex; flex-direction: column; align-items: center;">
+<h2>Login</h2>
+<form style="display: flex; flex-direction: column; width: 400px; height: vh; " (ngSubmit)="login()">
+  <input
+  style="margin-bottom: 5px; height: 40px; "
+    [(ngModel)]="username"
+    name="username"
+    placeholder="Username"
+    required
+  />
+  <input
+  style="margin-bottom: 5px; height: 40px; "
+    [(ngModel)]="password"
+    type="password"
+    name="password"
+    placeholder="Password"
+    required
+  />
+  <button style="height: 40px;" type="submit">Login</button>
+</form>
+</div>

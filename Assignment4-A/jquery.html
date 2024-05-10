@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        /* Custom styles */
+        .ui-page {
+            background-color: #f0f0f0;
+        }
+        .ui-content {
+            padding: 20px;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            color: #666;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .ui-footer {
+            text-align: center;
+            color: #999;
+            font-size: 14px;
+            padding: 10px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <h2>Welcome to our Mobile App</h2>
+        </div>
+
+        <div role="main" class="ui-content">
+            <p>Explore the world of exciting adventures with our mobile app!</p>
+            <p>Ready to embark on a journey? <a href="#page2">Learn more</a></p>
+        </div>
+
+        <div data-role="footer">
+            <h4>&copy; 2024 Mobile App</h4>
+        </div>
+    </div>
+
+    <div data-role="page" id="page2">
+        <div data-role="header">
+            <h1>About Us</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+            <p>Our mission is to provide you with unforgettable experiences and memories that last a lifetime.</p>
+            <p>Ready to start your adventure? <a href="#page1">Back to Home</a></p>
+        </div>
+
+        <div data-role="footer">
+            <h4>&copy; 2024 Adventure App</h4>
+        </div>
+    </div>
+</body>
+</html>
